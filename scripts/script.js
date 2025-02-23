@@ -16,6 +16,7 @@ const divs = document.querySelectorAll(".squares");
 divs.forEach(element => {
     element.addEventListener('mouseenter', () => {
         element.classList.add("hover");
+        element.style.backgroundColor = "rgb(" + Math.floor(Math.random()*256) + " " + Math.floor(Math.random()*256) + " " + Math.floor(Math.random()*256) + ")";
     })
     
     element.addEventListener('mouseout', () => {
@@ -40,6 +41,7 @@ newSketch.addEventListener("click", () => {
         newDivs.forEach(element => {
             element.addEventListener('mouseenter', () => {
                 element.classList.add("hover");
+                element.style.backgroundColor = "rgb(" + Math.floor(Math.random()*256) + " " + Math.floor(Math.random()*256) + " " + Math.floor(Math.random()*256) + ")";
             })
             
             element.addEventListener('mouseout', () => {
