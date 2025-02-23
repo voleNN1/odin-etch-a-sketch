@@ -1,10 +1,11 @@
 const container = document.querySelector(".container");
 
 function createGrid(squares) {
-    squares = squares * squares;
-    for (i = 0; i < squares; i++) {
+    totalSquares = squares * squares;
+    for (i = 0; i < totalSquares; i++) {
        const div = document.createElement("div");
        div.classList.add("squares");
+       div.setAttribute("style", "flex-basis: " + (100/squares) + "%");
        container.appendChild(div);
     }
 };
