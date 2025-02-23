@@ -9,7 +9,16 @@ function createGrid(squares) {
 
 createGrid(256);
 
-const div = document.querySelector(".squares");
-div.addEventListener('mouseover', () => {
-    div.style.backgroundColor = "slategrey";
-});
+const divs = document.querySelectorAll(".squares");
+
+divs.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.style.backgroundColor = "slategrey";
+    })
+
+    element.addEventListener('mouseout', () => {
+        element.style.backgroundColor = "darkslategrey";
+    })
+})
+
+
