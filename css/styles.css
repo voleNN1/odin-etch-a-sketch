@@ -1,14 +1,39 @@
+#new-sketch {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    background-color: #0da128;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+body {
+    background: #1d5a66;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
+    height: 900px;
+    width: 900px;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
 }
 
 .squares {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100% / 16);
     margin: 0;
-    padding: 3px;
-    background-color: darkslategray;
-    flex: 1 1 5.5%;
+    padding: 0;
+    background-color: darkslategrey;
+    width: 5px;
+}
+
+.hover {
+    background-color: slateblue;
 }
